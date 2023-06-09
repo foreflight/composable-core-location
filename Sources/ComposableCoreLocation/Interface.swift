@@ -272,7 +272,7 @@ public struct LocationManager {
 
   @available(macOS, unavailable)
   @available(tvOS, unavailable)
-  @available(watchOS, unavailable)
+//  @available(watchOS, unavailable)
   public var isRangingAvailable: () -> Bool
 
   public var location: () -> Location?
@@ -280,11 +280,11 @@ public struct LocationManager {
   public var locationServicesEnabled: () -> Bool
 
   @available(tvOS, unavailable)
-  @available(watchOS, unavailable)
+//  @available(watchOS, unavailable)
   public var maximumRegionMonitoringDistance: () -> CLLocationDistance
 
   @available(tvOS, unavailable)
-  @available(watchOS, unavailable)
+//  @available(watchOS, unavailable)
   public var monitoredRegions: () -> Set<Region>
 
   @available(tvOS, unavailable)
@@ -299,20 +299,20 @@ public struct LocationManager {
   public var set: (Properties) -> EffectPublisher<Never, Never>
 
   @available(tvOS, unavailable)
-  @available(watchOS, unavailable)
+//  @available(watchOS, unavailable)
   public var significantLocationChangeMonitoringAvailable: () -> Bool
 
   @available(tvOS, unavailable)
-  @available(watchOS, unavailable)
+//  @available(watchOS, unavailable)
   public var startMonitoringForRegion: (Region) -> EffectPublisher<Never, Never>
 
   @available(tvOS, unavailable)
-  @available(watchOS, unavailable)
+//  @available(watchOS, unavailable)
   public var startMonitoringSignificantLocationChanges: () -> EffectPublisher<Never, Never>
 
   @available(macOS, unavailable)
   @available(tvOS, unavailable)
-  @available(watchOS, unavailable)
+//  @available(watchOS, unavailable)
   public var startMonitoringVisits: () -> EffectPublisher<Never, Never>
 
   @available(macOS, unavailable)
@@ -323,16 +323,16 @@ public struct LocationManager {
   public var startUpdatingLocation: () -> EffectPublisher<Never, Never>
 
   @available(tvOS, unavailable)
-  @available(watchOS, unavailable)
+//  @available(watchOS, unavailable)
   public var stopMonitoringForRegion: (Region) -> EffectPublisher<Never, Never>
 
   @available(tvOS, unavailable)
-  @available(watchOS, unavailable)
+//  @available(watchOS, unavailable)
   public var stopMonitoringSignificantLocationChanges: () -> EffectPublisher<Never, Never>
 
   @available(macOS, unavailable)
   @available(tvOS, unavailable)
-  @available(watchOS, unavailable)
+//  @available(watchOS, unavailable)
   public var stopMonitoringVisits: () -> EffectPublisher<Never, Never>
 
   @available(macOS, unavailable)
@@ -394,12 +394,12 @@ extension LocationManager {
 
     @available(macOS, unavailable)
     @available(tvOS, unavailable)
-    @available(watchOS, unavailable)
+//    @available(watchOS, unavailable)
     var pausesLocationUpdatesAutomatically: Bool? = nil
 
     @available(macOS, unavailable)
     @available(tvOS, unavailable)
-    @available(watchOS, unavailable)
+//    @available(watchOS, unavailable)
     var showsBackgroundLocationIndicator: Bool? = nil
 
     public static func == (lhs: Self, rhs: Self) -> Bool {
